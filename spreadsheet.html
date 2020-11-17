@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : PlainDisplay 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140309
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+	const { GoogleSpreadsheet } = require('google-spreadsheet');
+
+
+const creds = require('./client_secret.json');
+
+function printData(data){
+	console.log("Equipo: " + data.Equipo);
+	console.log("Marca: "+ data.Marca);
+	console.log("Modelo: "+ data.Modelo);
+	console.log("Serial Number: "+ data.Serial);
+	console.log("ID: "+ data.ID);
+	console.log("---------------------");
+}
+
+
+async function accessSpreadsheet(){
+	const doc = new GoogleSpreadsheet('1wRtP8l75omW1Fc7CApmb0iPvhVmxVvtm7b5cM2Ss6zk');
+	await doc.useServiceAccountAuth(creds);
+	await doc.loadInfo();
+	const sheet = doc.sheetsByIndex[0];
+	const rows = await sheet.getRows({
+		offset: 0
+	});
+	console.log("Title: " + sheet.title);
+	
+	rows.forEach(row => {
+		printData(row);
+	})
+	}
+
+
+accessSpreadsheet();
+	
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+
+</style>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html">Soquipa</a></h1>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+			
+			<ul class="actions">
+				<script type="text/javascript" src="./bundle.js">
+					accessSpreadsheet();
+				</script>
+				<li><a href="#" onClick="accessSpreadsheet()" class="button">Generar tabla</a></li>
+
+			</ul>
+	</div>
+	<div id="extra" class="container">
+
+		</div>
+
+	</div>
+	<div id="featured">
+		<div class="container">
+			
+		</div>
+
+	</div>
+	<div id="page" class="container">
+
+</div>
+
+</body>
+</html>
