@@ -29,7 +29,7 @@ app.get('/', function(request, response) {
 	response.sendFile(path.join(__dirname + '/login.html'));
 });
 
-app.post('/auth', function(request, response) {
+app.post('/login', function(request, response) {
 	var username = request.body.username;
 	var password = request.body.password;
 	if (username && password) {

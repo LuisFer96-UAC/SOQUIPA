@@ -12,7 +12,6 @@ function printData(data){
 	console.log("---------------------");
 }
 
-
 async function accessSpreadsheet(){
 	const doc = new GoogleSpreadsheet('1wRtP8l75omW1Fc7CApmb0iPvhVmxVvtm7b5cM2Ss6zk');
 	await doc.useServiceAccountAuth(creds);
