@@ -1,0 +1,201 @@
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;width:500px;margin:0 auto;}
+.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-gl4q{font-family:"Arial Black", Gadget, sans-serif !important;;text-align:center;vertical-align:middle}
+.tg .tg-5dmb{background-color:#fe0000;border-color:inherit;color:#333333;font-family:"Arial Black", Gadget, sans-serif !important;;
+  text-align:center;vertical-align:top}
+.tg .tg-xbra{background-color:#fe0000;font-family:"Arial Black", Gadget, sans-serif !important;;text-align:center;vertical-align:top
+  }
+.tg .tg-223e{font-family:"Arial Black", Gadget, sans-serif !important;;text-align:center;vertical-align:top}
+
+.boton {
+margin:0 auto;
+width:500px;
+border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+padding: 10px; /*espacio alrededor texto*/
+background-color: #2e518b; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+border-radius: 50px; /*bordes redondos*/
+
+}
+
+	.nav {
+				width:100px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			.login-form {
+			width: 300px;
+			margin: 0 auto;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 300px;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 300px;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+	</style>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html">Soquipa</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="login.html" accesskey="1" title="">Desconectar</a></li>
+				<li><a href="#" accesskey="2" title="">Crear una tabla</a></li>
+				<li><a href="#" accesskey="2" title="">Ver tablas</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+		<div style="text-align: center">
+		<h1>Cambiar nombre de la tabla</h1>
+		</div>
+				<form action="" method="POST">
+                <input type="text" name="nombreTabla" placeholder="Nombre de la tabla">
+                <input type="submit">
+            </form>
+
+	</div>
+	<div id="extra" class="container">
+		<table class="tg" >
+<thead>
+  <tr>
+    <th class="tg-0pky">Equipo</th>
+    <th class="tg-0lax">Marca</th>
+    <th class="tg-0lax">Modelo</th>
+    <th class="tg-0lax">Serial</th>
+    <th class="tg-0lax">ID</th>
+    <th class="tg-0lax">Borrar</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">PC</td>
+    <td class="tg-0lax">HP</td>
+    <td class="tg-0lax">SmartPC</td>
+    <td class="tg-0lax">CDR-24086</td>
+    <td class="tg-0lax">24563</td>
+    <td class="tg-0lax"><img src="images/borrar.jpg" width="30" height="30"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Laptop</td>
+    <td class="tg-0lax">Dell</td>
+    <td class="tg-0lax">SmartLaptop</td>
+    <td class="tg-0lax">LPT-32451</td>
+    <td class="tg-0lax">56742</td>
+    <td class="tg-0lax"><img src="images/borrar.jpg" width="30" height="30"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Impresora</td>
+    <td class="tg-0lax">HP</td>
+    <td class="tg-0lax">SmartPrint</td>
+    <td class="tg-0lax">PNRT-82</td>
+    <td class="tg-0lax">98076</td>
+    <td class="tg-0lax"><img src="images/borrar.jpg" width="30" height="30"></td>
+  </tr>
+</tbody>
+</table>
+
+
+		</div>
+
+	</div>
+	<div id="featured">
+		<div class="container">
+		<h1>Agregar datos a la tabla</h1>
+		<table class="tg" >
+	<thead>
+  <tr>
+    <th class="tg-0pky">Equipo</th>
+    <th class="tg-0lax">Marca</th>
+    <th class="tg-0lax">Modelo</th>
+    <th class="tg-0lax">Serial</th>
+    <th class="tg-0lax">ID</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+
+
+	</div>
+		</div>
+		<div style="text-align: center">
+		<a class="boton" href="">Agregar</a>
+		</div>
+
+</body>
+</html>
